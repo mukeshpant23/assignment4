@@ -1,0 +1,49 @@
+<form [formGroup]="heroForm" novalidate>
+  <div class="form-group">
+    <label class="center-block">User:
+      <input class="form-control" formControlName="id">
+    </label>
+    <label class="center-block">Name:
+      <input class="form-control" formControlName="name">
+    </label>
+    <label class="center-block">username:
+      <input class="form-control" formControlName="username">
+    </label>
+    <label class="center-block">Email:
+      <input class="form-control" formControlName="email">
+    </label>
+    <label class="center-block">Phone:
+      <input class="form-control" formControlName="phone">
+    </label>
+    <label class="center-block">Website:
+      <input class="form-control" formControlName="website">
+    </label>
+    <label class="center-block">Street:
+      <input class="form-control" formControlName="street">
+    </label>
+    <label class="center-block">Suite:
+      <input class="form-control" formControlName="suite">
+    </label>
+    <label class="center-block">City:
+      <input class="form-control" formControlName="city">
+    </label>
+    <label class="center-block">ZipCode:
+      <input class="form-control" formControlName="zipcode">
+    </label>
+    <label class="center-block">Name:
+      <input class="form-control" formControlName="company_name">
+    </label>
+    <label class="center-block">Catch Phare:
+      <input class="form-control" formControlName="company_catch_phrase">
+    </label>
+    <label class="center-block">BS:
+      <input class="form-control" formControlName="company_bs">
+    </label>
+  </div>
+</form>
+<div>
+  <button class="btn btn-success"  (click)="edit=true;" *ngIf="!edit">Edit</button>
+  <button class="btn btn-success" *ngIf="edit">Update</button>
+  <button class="btn btn-danger" *ngIf="edit" (click)="edit=false;">Cancel</button>
+  <button class="btn btn-primary" *ngIf="edit" (click)="clearFormData()">Clear</button>
+</div>

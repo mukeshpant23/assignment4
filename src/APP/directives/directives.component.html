@@ -1,0 +1,15 @@
+<div>
+  <h3>Pipe : Mask Credit card</h3>
+  <p>unmasked credit card number : 12345641231545612</p>
+  <p>masked credit card number with pipe : {{12345641231545612 | creditcardmask : 5}} </p>
+</div>
+
+<div>
+  <h3>Attribute Directive Cycle color</h3>
+  <p [myHighlight]="colors" >Color of this text will change in every (1sec)</p>
+</div>
+
+<div>
+  <h3>Structural Directive : Remove Element After</h3>
+  <p [removeEle]="time" >This text will remove after (1sec)</p>
+</div>
